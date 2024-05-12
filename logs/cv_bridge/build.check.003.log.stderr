@@ -1,0 +1,6 @@
+[31m[1mCMake Error[0m at /home/av2/catkin_ws/src/vision_opencv/cv_bridge/CMakeLists.txt:11:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "````SET".
+
+
+make: *** [cmake_check_build_system] Error 1

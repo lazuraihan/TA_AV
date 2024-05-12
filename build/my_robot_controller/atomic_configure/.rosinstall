@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/av2/catkin_ws/devel/.private/my_robot_controller/setup.sh

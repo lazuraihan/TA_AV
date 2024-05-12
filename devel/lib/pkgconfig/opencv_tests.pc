@@ -1,0 +1,1 @@
+/home/av2/catkin_ws/devel/.private/opencv_tests/lib/pkgconfig/opencv_tests.pc

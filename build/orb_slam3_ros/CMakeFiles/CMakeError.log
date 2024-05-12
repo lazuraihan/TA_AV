@@ -1,0 +1,56 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/av2/catkin_ws/build/orb_slam3_ros/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_62684/fast"
+/usr/bin/make -f CMakeFiles/cmTC_62684.dir/build.make CMakeFiles/cmTC_62684.dir/build
+make[1]: Entering directory '/home/av2/catkin_ws/build/orb_slam3_ros/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_62684.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall   -O3    -o CMakeFiles/cmTC_62684.dir/CheckSymbolExists.c.o   -c /home/av2/catkin_ws/build/orb_slam3_ros/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_62684
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62684.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall   -O3     -rdynamic CMakeFiles/cmTC_62684.dir/CheckSymbolExists.c.o  -o cmTC_62684 
+CMakeFiles/cmTC_62684.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text.startup+0x0): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text.startup+0x4): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_62684.dir/build.make:97: recipe for target 'cmTC_62684' failed
+make[1]: *** [cmTC_62684] Error 1
+make[1]: Leaving directory '/home/av2/catkin_ws/build/orb_slam3_ros/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_62684/fast' failed
+make: *** [cmTC_62684/fast] Error 2
+
+File /home/av2/catkin_ws/build/orb_slam3_ros/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/av2/catkin_ws/build/orb_slam3_ros/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_09bfc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_09bfc.dir/build.make CMakeFiles/cmTC_09bfc.dir/build
+make[1]: Entering directory '/home/av2/catkin_ws/build/orb_slam3_ros/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09bfc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall   -O3 -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_09bfc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_09bfc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09bfc.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall   -O3 -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_09bfc.dir/CheckFunctionExists.c.o  -o cmTC_09bfc -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_09bfc.dir/build.make:97: recipe for target 'cmTC_09bfc' failed
+make[1]: *** [cmTC_09bfc] Error 1
+make[1]: Leaving directory '/home/av2/catkin_ws/build/orb_slam3_ros/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_09bfc/fast' failed
+make: *** [cmTC_09bfc/fast] Error 2
+
+

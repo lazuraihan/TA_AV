@@ -1,0 +1,11 @@
+Build type: Release
+OPENCV VERSION:
+4.4.0
+CMake Error: File /home/av2/catkin_ws/src/orb_slam3_ros/config.h.in does not exist.
+[31m[1mCMake Error[0m at /home/av2/catkin_ws/src/orb_slam3_ros/orb_slam3/Thirdparty/g2o/CMakeLists.txt:54 (configure_file):
+  configure_file Problem configuring file
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:93 (include)
+
+
+make: *** [cmake_check_build_system] Error 1
