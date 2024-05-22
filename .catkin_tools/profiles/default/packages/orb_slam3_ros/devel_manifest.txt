@@ -9,6 +9,7 @@ orb_slam3_ros
 /home/av2/catkin_ws/devel/.private/orb_slam3_ros/lib/orb_slam3_ros/rgbl_kitti /home/av2/catkin_ws/devel/lib/orb_slam3_ros/rgbl_kitti
 /home/av2/catkin_ws/devel/.private/orb_slam3_ros/lib/orb_slam3_ros/ros_rgbd /home/av2/catkin_ws/devel/lib/orb_slam3_ros/ros_rgbd
 /home/av2/catkin_ws/devel/.private/orb_slam3_ros/lib/orb_slam3_ros/ros_stereo_inertial /home/av2/catkin_ws/devel/lib/orb_slam3_ros/ros_stereo_inertial
+/home/av2/catkin_ws/devel/.private/orb_slam3_ros/lib/orb_slam3_ros/ros_rgbl /home/av2/catkin_ws/devel/lib/orb_slam3_ros/ros_rgbl
 /home/av2/catkin_ws/devel/.private/orb_slam3_ros/lib/orb_slam3_ros/ros_mono /home/av2/catkin_ws/devel/lib/orb_slam3_ros/ros_mono
 /home/av2/catkin_ws/devel/.private/orb_slam3_ros/lib/python2.7/dist-packages/orb_slam3_ros/__init__.py /home/av2/catkin_ws/devel/lib/python2.7/dist-packages/orb_slam3_ros/__init__.py
 /home/av2/catkin_ws/devel/.private/orb_slam3_ros/lib/python2.7/dist-packages/orb_slam3_ros/srv/_SaveMap.py /home/av2/catkin_ws/devel/lib/python2.7/dist-packages/orb_slam3_ros/srv/_SaveMap.py
