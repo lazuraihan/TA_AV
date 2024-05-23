@@ -1,6 +1,6 @@
 #include <ros/ros.h>
 #include <sensor_msgs/LaserScan.h>
-#include <sensor_msgs/PointCloud.h>
+#include <sensor_msgs/PointCloud2.h>
 #include <laser_geometry/laser_geometry.h>
 
 // The LaserScanToPointCloud class subscribes to the /scan topic and publishes to the /pointcloud topic.
@@ -14,7 +14,7 @@ public:
         scan_sub_ = nh_.subscribe("/scan", 1, &LaserScanToPointCloud::scanCallback, this);
 
         // Advertise the PointCloud topic
-        cloud_pub_ = nh_.advertise<sensor_msgs::PointCloud>("/pointcloud", 1);
+        cloud_pub_ = nh_.advertise<sensor_msgs::PointCloud2>("/pointcloud", 1);
     }
 
 // The scanCallback function is called whenever a new LaserScan message is received.
@@ -23,7 +23,7 @@ private:
     void scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan_msg) {
         // Convert LaserScan to PointCloud
         laser_geometry::LaserProjection projector;
-        sensor_msgs::PointCloud cloud;
+        sensor_msgs::PointCloud2 cloud;
         projector.projectLaser(*scan_msg, cloud);
 
         // Publish the PointCloud

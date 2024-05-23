@@ -11,7 +11,7 @@ ros/ros.h
 -
 sensor_msgs/LaserScan.h
 -
-sensor_msgs/PointCloud.h
+sensor_msgs/PointCloud2.h
 -
 laser_geometry/laser_geometry.h
 -
